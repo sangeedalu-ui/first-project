@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "myntra-001",
+      "name": "Cotton Floral Print A-Line Dress",
+      "url": "https://www.myntra.com/dresses/brand/cotton-floral-dress",
+      "platform": "Myntra",
+      "category": "Dresses",
+      "addedAt": "2026-09-01T10:00:00Z"
+    },
+    {
+      "id": "meesho-001",
+      "name": "Rayon Anarkali Kurti Set",
+      "url": "https://www.meesho.com/rayon-anarkali-kurti",
+      "platform": "Meesho",
+      "category": "Kurtas",
+      "addedAt": "2026-09-01T10:00:00Z"
+    },
+    {
+      "id": "amazon-001",
+      "name": "Cotton Blend Palazzo Set",
+      "url": "https://www.amazon.in/cotton-palazzo-set",
+      "platform": "Amazon",
+      "category": "Ethnic Wear",
+      "addedAt": "2026-09-01T10:00:00Z"
+    }
+  ]
+}

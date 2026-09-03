@@ -1,0 +1,26 @@
+{
+  "budget": {
+    "max": 5000,
+    "currency": "INR"
+  },
+  "sizes": ["S", "M"],
+  "fabrics": ["Cotton", "Linen", "Rayon", "Chiffon", "Georgette"],
+  "categories": ["Women's Clothing", "Dresses", "Tops", "Kurtas", "Sarees", "Ethnic Wear"],
+  "discounts": {
+    "min": 30,
+    "preferred": [40, 50, 60]
+  },
+  "designPreferences": ["New Arrivals", "Trending", "Latest"],
+  "platforms": ["Myntra", "Meesho", "Amazon"],
+  "notifications": {
+    "enabled": true,
+    "channels": ["console"],
+    "schedule": {
+      "startHour": 9,
+      "endHour": 23
+    }
+  },
+  "checkInterval": {
+    "hours": 6
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress Deal Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>👗 Dress Deal Tracker</h1>
+      <p class="subtitle">Best deals on women's clothing from Myntra, Meesho & Amazon</p>
+    </header>
+
+    <section class="summary" id="summary">
+      <div class="stat-card">
+        <span class="stat-value" id="totalProducts">0</span>
+        <span class="stat-label">Total Products</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="matchingProducts">0</span>
+        <span class="stat-label">Matching</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="bestDeal">--</span>
+        <span class="stat-label">Best Deal</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="smAvailable">0</span>
+        <span class="stat-label">S/M Available</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="newAlerts">0</span>
+        <span class="stat-label">New Alerts</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="lastUpdate">--</span>
+        <span class="stat-label">Last Update</span>
+      </div>
+    </section>
+
+    <section class="filters">
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <label>Platform:</label>
+        <select id="filterPlatform">
+          <option value="">All Platforms</option>
+          <option value="Myntra">Myntra</option>
+          <option value="Meesho">Meesho</option>
+          <option value="Amazon">Amazon</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Max Price:</label>
+        <input type="number" id="filterPrice" placeholder="₹5000" value="5000">
+      </div>
+      <div class="filter-group">
+        <label>Min Discount:</label>
+        <select id="filterDiscount">
+          <option value="0">Any</option>
+          <option value="30">30%+</option>
+          <option value="40">40%+</option>
+          <option value="50">50%+</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Fabric:</label>
+        <select id="filterFabric">
+          <option value="">All Fabrics</option>
+          <option value="Cotton">Cotton</option>
+          <option value="Rayon">Rayon</option>
+          <option value="Linen">Linen</option>
+          <option value="Georgette">Georgette</option>
+          <option value="Chiffon">Chiffon</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Size:</label>
+        <select id="filterSize">
+          <option value="">All Sizes</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Status:</label>
+        <select id="filterStatus">
+          <option value="">All</option>
+          <option value="great">🔥 Great Deal</option>
+          <option value="good">🟢 Good Deal</option>
+          <option value="watch">🟡 Watch</option>
+        </select>
+      </div>
+      <button onclick="applyFilters()">Apply Filters</button>
+      <button onclick="resetFilters()">Reset</button>
+    </section>
+
+    <section class="products">
+      <h2>Products</h2>
+      <div id="productList" class="product-grid"></div>
+    </section>
+
+    <section class="alerts-section">
+      <h2>Recent Alerts</h2>
+      <div id="alertsList" class="alerts-list"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
