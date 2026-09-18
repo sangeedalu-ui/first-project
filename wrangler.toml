@@ -1,21 +1,6 @@
 name = "dress-deal-tracker"
-compatibility_date = "2026-09-03"
+compatibility_date = "2025-07-18"
 
 # Static site for Cloudflare Pages
 [site]
 bucket = "./public"
-
-# Cloudflare Worker configuration
-[worker]
-main = "src/worker.js"
-compatibility_flags = ["nodejs_compat"]
-
-# Cron trigger for scheduled deal checks
-# Runs every 6 hours
-[triggers]
-crons = ["0 */6 * * *"]
-
-# Environment variables (set via wrangler secret or .dev.vars)
-# API_KEY = ""
-# TELEGRAM_BOT_TOKEN = ""
-# TELEGRAM_CHAT_ID = ""
